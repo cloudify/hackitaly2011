@@ -76,7 +76,6 @@ class HomeController < ApplicationController
         :format => "json",
         :genreCode => params[:genreCode]
       })
-    puts req.body
     render :json => req.body
   end
 end
