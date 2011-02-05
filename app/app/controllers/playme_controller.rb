@@ -27,10 +27,8 @@ class PlaymeController < ApplicationController
     selected = samples.sample
 
     session[:right] = selected['trackCode']
-
+    @mp3 = selected['previewUrl']
     @data = samples.map {|s| {:name => s['name'], :artist => s['artist']['name'], :image => s['images']['img_96']} }
-
-    #render :json => resp.to_json
   end
 
   def submitresult
@@ -41,7 +39,7 @@ class PlaymeController < ApplicationController
         :guid => session[:guid]
       },
       :params => {
-        :lastScore => params[:result] == session[:right] ? 1 : -1
+        :lastScore => params[:result].to_i == session[:right] ? 1 : -1
       })
     req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/byguid/" + session[:guid].to_s,
       :method        => :get,
