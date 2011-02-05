@@ -65,6 +65,8 @@ GEM
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
+    typhoeus (0.2.1)
+      mime-types
     tzinfo (0.3.24)
 
 PLATFORMS
@@ -73,3 +75,4 @@ PLATFORMS
 DEPENDENCIES
   rails (= 3.0.3)
   sqlite3-ruby
+  typhoeus
