@@ -1,0 +1,25 @@
+body {
+  font-family: arial;
+  font-size: 20px;
+  color: gray;
+}
+
+.quiz {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.candidates {
+  margin-top: 50px;
+}
+
+.quiz .buttonContainer {
+  text-align: center;
+}
+
+.quiz button {
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+}
