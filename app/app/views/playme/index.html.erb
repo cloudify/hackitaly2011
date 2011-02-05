@@ -13,12 +13,8 @@
             <img src="<%= song[:image] %>">
             <h3><a href="/playme/submitresult?result=<%= song[:id]%>"><%= song[:name] %></a></h3>
             <p><%= song[:artist] %></p>
-            <a href="/playme/submitresult?result=<%= song[:id]%>">x</a>
         </li>
       <% end %>
     </ul>
-
-
-    <h3><a href="/home/logout">Sign out</a></h3>   	
   </div>
 </div>

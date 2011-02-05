@@ -1073,3 +1073,340 @@ Completed 200 OK in 4533ms (Views: 19.7ms | ActiveRecord: 0.0ms)
 Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:10:56 +0100 2011
   Processing by HomeController#gettopscores as JSON
 Completed 200 OK in 130ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 19:11:53 +0100 2011
+  Processing by TopusersController#index as */*
+Rendered topusers/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:11:54 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 4215ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:12:11 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 123ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:12:13 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 162ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:12:14 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 161ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/" for 127.0.0.1 at Sat Feb 05 19:13:45 +0100 2011
+  Processing by PlaymeController#index as HTML
+
+
+Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 19:13:55 +0100 2011
+  Processing by HomeController#logout as HTML
+Redirected to http://hackitaly.local/?web=0
+Completed 302 Found in 1ms
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 19:13:55 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:13:55 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 448ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11380ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 19:14:00 +0100 2011
+  Processing by HomeController#login as */*
+  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"hjk"}
+Redirected to http://hackitaly.local/?web=0
+Completed 302 Found in 175ms
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 19:14:00 +0100 2011
+  Processing by HomeController#index as */*
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:01 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 152ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 19:14:02 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 4181ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:07 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+
+
+Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 19:14:11 +0100 2011
+  Processing by TopusersController#index as */*
+Rendered topusers/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 5005ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:12 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 131ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:13 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 1484ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:14 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 188ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:15 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 128ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 19:14:31 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 19:14:32 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7129ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:39 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 155ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult?result=123525" for 127.0.0.1 at Sat Feb 05 19:14:40 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+  Parameters: {"result"=>"123525"}
+// PRE
+// MID
+// POST
+Rendered playme/submitresult.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 174ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:41 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 165ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:43 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 163ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult?result=410549" for 127.0.0.1 at Sat Feb 05 19:14:44 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+  Parameters: {"result"=>"410549"}
+// PRE
+// MID
+// POST
+Rendered playme/submitresult.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 172ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:44 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 168ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:46 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 166ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult?result=121365" for 127.0.0.1 at Sat Feb 05 19:14:48 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+  Parameters: {"result"=>"121365"}
+// PRE
+// MID
+// POST
+Rendered playme/submitresult.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 170ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:48 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 174ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:50 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 137ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:56 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 131ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:14:58 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 111ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 19:15:05 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 19:15:05 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5182ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:10 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 133ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult?result=292391" for 127.0.0.1 at Sat Feb 05 19:15:12 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+  Parameters: {"result"=>"292391"}
+// PRE
+// MID
+// POST
+Rendered playme/submitresult.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 2767ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:15 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 131ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:17 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 129ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:27 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 154ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:29 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 260ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult?result=292401" for 127.0.0.1 at Sat Feb 05 19:15:30 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+  Parameters: {"result"=>"292401"}
+// PRE
+// MID
+// POST
+Rendered playme/submitresult.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 174ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:31 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 755ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:32 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 199ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 19:15:37 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 19:15:37 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6360ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:43 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 147ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult?result=120082" for 127.0.0.1 at Sat Feb 05 19:15:45 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+  Parameters: {"result"=>"120082"}
+// PRE
+// MID
+// POST
+Rendered playme/submitresult.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 182ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:45 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 144ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:47 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 148ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 19:15:51 +0100 2011
+  Processing by PlaymeController#index as HTML
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 2510ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:54 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 875ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult?result=13897" for 127.0.0.1 at Sat Feb 05 19:15:56 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+  Parameters: {"result"=>"13897"}
+// PRE
+// MID
+// POST
+Rendered playme/submitresult.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 819ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:15:57 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 177ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 19:15:58 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7443ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 19:16:06 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 149ms (Views: 10.1ms | ActiveRecord: 0.0ms)
