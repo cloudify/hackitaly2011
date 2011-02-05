@@ -16,7 +16,13 @@ class HomeController < ApplicationController
         :apikey => '1234567890'
       })
     
-    @top_users = ActiveSupport::JSON.decode(chart_req.body).collect{ |p| p['score'] = p['entry'].andand['playerScore'].andand['default'].andand['balance'].to_i; p }.sort do |a,b|
+    @top_users = ActiveSupport::JSON.decode(chart_req.body)
+    
+    if !@top_users
+      render :json => {:status => :error} and return
+    end
+    
+    @top_users = @top_users.collect{ |p| p['score'] = p['entry'].andand['playerScore'].andand['default'].andand['balance'].to_i; p }.sort do |a,b|
       b['score'] <=> a['score']
     end
     
