@@ -2161,3 +2161,376 @@ Completed 200 OK in 194ms (Views: 9.4ms | ActiveRecord: 0.0ms)
 Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:16:59 +0100 2011
   Processing by HomeController#gettopscores as JSON
 Completed 200 OK in 151ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:20:07 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:20:07 +0100 2011
+  Processing by TopusersController#index as */*
+Rendered topusers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:20:07 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 583ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:20:09 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:20:09 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 176ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:20:10 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 164ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:20:44 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:20:44 +0100 2011
+  Processing by TopusersController#index as */*
+Rendered topusers/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:20:44 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 159ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:20:45 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:20:46 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 213ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:20:47 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 142ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 16:22:17 +0100 2011
+  Processing by HomeController#logout as HTML
+Redirected to http://hackitaly.local/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:22:17 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:22:17 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 413ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 16:22:19 +0100 2011
+  Processing by HomeController#login as */*
+  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"hjsadkfas"}
+Redirected to http://hackitaly.local/
+Completed 302 Found in 147ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:22:19 +0100 2011
+  Processing by HomeController#index as */*
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:22:20 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 136ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:22:23 +0100 2011
+  Processing by TopusersController#index as */*
+Rendered topusers/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:22:23 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 167ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:22:25 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:22:25 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 238ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:22:27 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 167ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 16:22:39 +0100 2011
+  Processing by HomeController#logout as HTML
+Redirected to http://hackitaly.local/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:22:39 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:22:39 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 184ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 16:22:43 +0100 2011
+  Processing by HomeController#login as */*
+  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"hjkasfka"}
+Redirected to http://hackitaly.local/
+Completed 302 Found in 184ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:22:43 +0100 2011
+  Processing by HomeController#index as */*
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:22:44 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 157ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:22:48 +0100 2011
+  Processing by TopusersController#index as */*
+Rendered topusers/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:22:48 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 131ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:22:52 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:22:52 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 172ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:23:00 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 235ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home." for 127.0.0.1 at Sat Feb 05 16:23:20 +0100 2011
+
+ActionController::RoutingError (No route matches "/home."):
+  
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 16:23:23 +0100 2011
+  Processing by HomeController#logout as HTML
+Redirected to http://hackitaly.local/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:23:23 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:23:23 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 150ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 16:23:25 +0100 2011
+  Processing by HomeController#login as */*
+  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"sadfa"}
+Redirected to http://hackitaly.local/
+Completed 302 Found in 187ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:23:25 +0100 2011
+  Processing by HomeController#index as */*
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:23:26 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 122ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:23:29 +0100 2011
+  Processing by TopusersController#index as */*
+Rendered topusers/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:23:29 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 664ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:23:33 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:23:34 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 165ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:23:36 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 170ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:23:38 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:23:39 +0100 2011
+  Processing by TopusersController#index as */*
+Rendered topusers/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:23:39 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 1232ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 16:24:00 +0100 2011
+  Processing by HomeController#logout as HTML
+Redirected to http://hackitaly.local/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:24:00 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:24:00 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 530ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 16:24:04 +0100 2011
+  Processing by HomeController#login as */*
+  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"asdfas"}
+Redirected to http://hackitaly.local/
+Completed 302 Found in 244ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:24:04 +0100 2011
+  Processing by HomeController#index as */*
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:24:05 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 177ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:24:11 +0100 2011
+  Processing by TopusersController#index as */*
+Rendered topusers/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:24:12 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 567ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:27:39 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:27:39 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 288ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:28:44 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/tracks?genreCode=26345&step=10" for 127.0.0.1 at Sat Feb 05 16:28:44 +0100 2011
+  Processing by HomeController#tracks as JSON
+  Parameters: {"step"=>"10", "genreCode"=>"26345"}
+Completed 200 OK in 2782ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:28:47 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 7215ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:35:25 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:35:25 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 307ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 16:35:43 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:35:43 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 285ms (Views: 9.0ms | ActiveRecord: 0.0ms)
