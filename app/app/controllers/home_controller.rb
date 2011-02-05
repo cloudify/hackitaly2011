@@ -54,9 +54,9 @@ class HomeController < ApplicationController
         :guid => session[:guid]
       },
       :params => {
-        :lastScore => (params[:result] ? 1 : -1) * Math.rand(5).to_i + 5
+        :lastScore => params[:result] ? 1 : -1
       })
-    req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/byguid/" + session[:guid],
+    req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/byguid/" + session[:guid].to_s,
       :method        => :get,
       :headers       => {
         :apikey => @@beintoo_apikey

@@ -17,12 +17,24 @@
   </div>
    
   <% else %>
+    <link rel="stylesheet" href="/stylesheets/game.css" type="text/css" />
+    <script type="text/javascript" src="/javascripts/game.js"></script>
+
   <div data-role="page" id="play">
    	<div data-role="header">
-   	  <h1>Play!</h1>
+   	  <h1><%= session[:guid] %> - Play!</h1>
    	</div>
 
  	<a href="/home/logout">Sign out</a>
+    
+    <script>
+      
+      var quiz = new Quiz(function() {
+        $("body").append(quiz.generate())
+      })
+      
+    </script>
+
  	<% end %>
 
 
