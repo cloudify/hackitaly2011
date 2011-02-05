@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		    <link rel="stylesheet" href="/stylesheets/game.css" type="text/css" />
+	    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+
+    <script type="text/javascript" src="/javascripts/game.js"></script>
+
+	</head>
+	<body>
+		<% if @current_user.nil? %>
+	<form method="POST" action="/home/login">
+			<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  			<input type="hidden" name="web" value="1">
+			Email Address <input type="text" name="login">
+  			<input type="submit" value="login">
+  		</form>
+		<% else %>
+		<h1>Welcome <%= session[:guid] %>! Guess the song!</h1>
+		<a href="/home/logout?web=1">Sign out</a>
+		
+	<script>
+      
+      var quiz = new Quiz(function() {
+        $("body").append(quiz.generate())
+      })
+      
+    </script>
+
+		<% end %>
+	</body>
+
+</html>
+	

@@ -6,7 +6,11 @@ class HomeController < ApplicationController
   @@playme_apikey = "4c3131495653414882"
   
   def index
-    @current_user = session[:user] 
+    @current_user = session[:user]
+    
+    if params[:web] == '1'
+      render :template => 'home/web', :layout => false 
+    end
   end
   
   def gettopscores
@@ -38,12 +42,12 @@ class HomeController < ApplicationController
       })
       session[:user] = ActiveSupport::JSON.decode(breq.body)
       session[:guid] = params[:login]
-      redirect_to '/'
+      redirect_to '/?web=' + params[:web].to_i.to_s
   end
 
   def logout
     session[:user] = nil
-    redirect_to '/'
+    redirect_to '/?web=' + params[:web].to_i.to_s
   end
   
   def submitresult
@@ -78,4 +82,5 @@ class HomeController < ApplicationController
       })
     render :json => req.body
   end
+  
 end
