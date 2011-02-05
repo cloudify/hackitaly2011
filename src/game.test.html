@@ -2,9 +2,18 @@
   
   <head>
     
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    
     <script type="text/javascript" src="jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="game.js"></script>
     
-    
+    <script>
+      
+      var quiz = new Quiz(function() {
+        $("body").append(quiz.generate())
+      })
+      
+    </script>
     
   </head>
   
