@@ -1,12 +1,44 @@
 function Quiz(callback) {
   
+  var GENRES = [
+         {
+            "genreCode":"26265",
+            "name":"Alternative Pop"
+         },
+         {
+            "genreCode":"26341",
+            "name":"Heavy Metal"
+         },
+         {
+            "genreCode":"26345",
+            "name":"Hip Hop"
+         },
+         {
+            "genreCode":"26360",
+            "name":"Italian"
+         },
+         {
+            "genreCode":"26373",
+            "name":"Latin-American"
+         },
+         {
+            "genreCode":"26401",
+            "name":"Pop"
+         },
+         {
+            "genreCode":"26407",
+            "name":"Punk"
+         }
+      ]
+  
   var CANDIDATES_NUM = 5
   var TRACKS_NUM = 10
   var tracks, currentTrack, candidates = new Array()
+  var genre = GENRES[Math.floor(Math.random()*GENRES.length)]
   
   var sortCandidates = function(a, b) { return a.name > b.name }
   
-  $.getJSON('proxy.php?op=3&apikey=4c3131495653414882&format=json&genreCode=26265&step=' + TRACKS_NUM, function(data) {
+  $.getJSON('proxy.php?op=3&apikey=4c3131495653414882&format=json&genreCode=' + genre.genreCode + '&step=' + TRACKS_NUM, function(data) {
     tracks = data.response.tracks
     callback()
   })
@@ -23,6 +55,7 @@ function Quiz(callback) {
     console.log('Correct answer: ' + currentTrack.name)
     
     var result ='<div class="quiz">'
+      result += '<h2>Guess the song in the genre: ' + genre.name + '</h2>'
       result += '<audio controls="controls"><source src="' + currentTrack.previewUrl + '" type="audio/mpeg" /></audio>'
       result += '<div class="candidates">'
         for (var i=0; i<candidates.length; i++) {
@@ -40,5 +73,5 @@ function Quiz(callback) {
     var correctness = $('input:radio:checked').val() == currentTrack.name
     console.log('answer: ' + correctness)
   }
-  
+  //10.235.239.16/home/submitresult result
 }
