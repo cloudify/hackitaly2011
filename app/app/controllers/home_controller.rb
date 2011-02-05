@@ -11,9 +11,13 @@ class HomeController < ApplicationController
         :apikey => "8efa78d626e15a7c5c72fa442f5793",
         :guid => params[:login]
       })
-      @current_user = ActiveSupport::JSON.decode(breq.body)
-      
-      render 'index'
+      session[:user] = ActiveSupport::JSON.decode(breq.body)
+      redirect_to root_url
+  end
+  
+  def logout
+    session[:user] = nil
+    redirect_to root_url
   end
   
 end
