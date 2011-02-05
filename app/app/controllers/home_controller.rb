@@ -39,7 +39,7 @@ class HomeController < ApplicationController
     req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/submitscore",
       :method        => :get,
       :headers       => {
-        :apikey => @beintoo_apikey
+        :apikey => @beintoo_apikey,
         :guid => session[:guid]
       },
       :params => {
@@ -56,6 +56,6 @@ class HomeController < ApplicationController
         :format => "json",
         :genreCode => params[:genreCode]
       })
-    render :json => ActiveSupport::JSON.decode(breq.body)
+    render :json => ActiveSupport::JSON.decode(req.body)
   end
 end
