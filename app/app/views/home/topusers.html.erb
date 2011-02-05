@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<script src="jquery-1.5.min.js"></script>
+		<script src="/jquery-1.5.min.js"></script>
 	</head>
 	<body>
 		<h2>Top Users</h2>
@@ -11,7 +11,7 @@
 	$(document).ready(function() {
 		$.getJSON('/home/gettopscores', function(data) {
 			for(var i = 0; i < data.length; i++) {
-				console.log(data[i]);
+				$('#top-users').append('<li>(' + data[i]['score'] +  ' points) ' + data[i]['entry']['guid']);
 			}
 		})
 	})
