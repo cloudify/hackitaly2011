@@ -10,8 +10,9 @@
      	<div data-role="header">
      		<h1>Login</h1>
      	</div>
-     	<div data-role="content">	
-    		<form action="/home/login">
+     	<div data-role="content">
+    		<form method="POST" action="/home/login">
+				<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     			email: <input type="text" name="login">
     			<input type="submit" value="login">
     		</form>
