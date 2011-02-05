@@ -17,7 +17,7 @@ class HomeController < ApplicationController
     chart_req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/app/topscore",
       :method        => :get,
       :headers       => {
-        :apikey => '1234567890'
+        :apikey => @@beintoo_apikey
       })
     
     @top_users = ActiveSupport::JSON.decode(chart_req.body)

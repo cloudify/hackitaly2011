@@ -57,7 +57,7 @@ function Quiz(callback) {
     var result ='<div class="quiz">'
       result += '<div class="player">'
         result += '<h2>Guess the song in the genre: ' + genre.name + '</h2>'
-        result += '<audio controls="controls"><source src="' + currentTrack.previewUrl + '" type="audio/mpeg" /></audio>'
+        result += '<audio controls="controls" autoplay="autoplay"><source src="' + currentTrack.previewUrl + '" type="audio/mpeg" /></audio>'
       result += '</div>'
       result += '<div class="candidates">'
         for (var i=0; i<candidates.length; i++) {

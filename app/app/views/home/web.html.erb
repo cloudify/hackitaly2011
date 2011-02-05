@@ -16,6 +16,18 @@
 		#score span {
 			font-size: 400px;
 		}
+		
+		#topusers {
+			position: absolute;
+			width: 300px;
+			height: 500px;
+			left: 0px;
+			top: 20px;
+		}
+		#topusers li.user {
+			
+		}
+		
 	</style>
 	</head>
 	<body>
@@ -30,6 +42,7 @@
 		<h1>Welcome <%= session[:guid] %>! Guess the song!</h1>
 		<a href="/home/logout?web=1">Sign out</a>
 		<div id="score"></div>
+		<ul id="topusers"></ul>
 	<script>
       	
 		$(document).ready(function() {
@@ -42,6 +55,11 @@
 				$('#score').html('Your score<br/><span>' + score + '</span>');
 			})
 			
+			$.getJSON('/home/gettopscores', function(data) {
+				for(var i = 0; i < data.length; i++) {
+					$('#topusers').append('<li class="' + (data[i]['entry']['guid'] == '<%= session[:guid] %>' ? 'user' : '') + '">(' + data[i]['score'] +  ' points) ' + data[i]['entry']['guid']);
+				}
+			})
 			
 		})
       
