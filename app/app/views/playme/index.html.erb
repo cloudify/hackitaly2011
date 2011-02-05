@@ -9,14 +9,10 @@
     <h2>Guess the Track</h2>
     <ul data-role="listview">
       <% @data.each do |song| %>
-        <li class="ui-li-has-thumb ui-btn ui-btn-icon-right ui-li ui-btn-down-c ui-btn-up-c" role="option" tabindex="0" data-theme="c">
-        <div class="ui-btn-inner">
-          <div class="ui-btn-text">
-            <img src="<%= song['image'] %>" class="ui-li-thumb">
-            <h3 class="ui-li-heading"><a href="index.html" class="ui-link-inherit"><%= song['name'] %></a></h3>
-            <h3 class="ui-li-heading"><a href="index.html" class="ui-link-inherit"><%= song['artist'] %></a></h3>
-          </div>
-        </div>
+        <li>
+            <img src="<%= song[:image] %>">
+            <h3><a href="index.html"><%= song[:name] %></a></h3>
+            <p><%= song[:artist] %></p></h3>
         </li>
       <% end %>
     </ul>

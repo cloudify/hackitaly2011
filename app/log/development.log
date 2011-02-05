@@ -1,0 +1,213 @@
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 17:57:30 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:57:31 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6603ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:57:37 +0100 2011
+  Processing by PlaymeController#index as */*
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:57:39 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 282ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 17:57:41 +0100 2011
+  Processing by HomeController#logout as HTML
+Redirected to http://hackitaly.local/?web=0
+Completed 302 Found in 0ms
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 17:57:42 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:57:42 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 1051ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7603ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 17:57:48 +0100 2011
+  Processing by HomeController#login as */*
+  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"dfa"}
+Redirected to http://hackitaly.local/?web=0
+Completed 302 Found in 205ms
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 17:57:48 +0100 2011
+  Processing by HomeController#index as */*
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:57:48 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 221ms (Views: 130.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 17:57:49 +0100 2011
+  Processing by TopusersController#index as */*
+Rendered topusers/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:57:50 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 84ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:57:51 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6842ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:57:58 +0100 2011
+  Processing by PlaymeController#index as */*
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:57:59 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 85ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playmeindex.html" for 127.0.0.1 at Sat Feb 05 17:58:02 +0100 2011
+
+ActionController::RoutingError (No route matches "/playmeindex.html"):
+  
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7457ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:58:09 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7741ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 17:58:25 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:58:25 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8399ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:58:34 +0100 2011
+  Processing by PlaymeController#index as */*
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:58:34 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 4507ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12144ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:58:46 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8918ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:00:24 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:00:24 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 6153ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:00:30 +0100 2011
+  Processing by PlaymeController#index as */*
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:00:30 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 240ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:00:32 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:00:32 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 2644ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5551ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:00:37 +0100 2011
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:00:37 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+  Processing by PlaymeController#index as */*
+Completed 200 OK in 3185ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6624ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:00:44 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8334ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:02:15 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:02:15 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 11543ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:02:27 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 9976ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playmeindex.html" for 127.0.0.1 at Sat Feb 05 18:03:22 +0100 2011
+
+ActionController::RoutingError (No route matches "/playmeindex.html"):
+  
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
