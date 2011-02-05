@@ -2,7 +2,7 @@ class HomeController < ApplicationController
 
   respond_to :html, :mobile
   
-  @@apikey = "8efa78d626e15a7c5c72fa442f5793"
+  @@beintoo_apikey = "8efa78d626e15a7c5c72fa442f5793"
   
   def index
     @current_user = session[:user] 
@@ -21,10 +21,11 @@ class HomeController < ApplicationController
     breq = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/login",
       :method        => :get,
       :headers       => {
-        :apikey => @@apikey,
+        :apikey => @@beintoo_apikey,
         :guid => params[:login]
       })
       session[:user] = ActiveSupport::JSON.decode(breq.body)
+      session[:guid] = params[:login]
       redirect_to '/'
   end
 
@@ -32,4 +33,17 @@ class HomeController < ApplicationController
     session[:user] = nil
     redirect_to '/'
   end
+  
+  def submitresult
+    req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/submitscore",
+      :method        => :get,
+      :headers       => {
+        :apikey => @beintoo_apikey
+        :guid => session[:guid]
+      },
+      :params => {
+        :lastScore => (params[:result] ? 1 : -1) * Math.rand(5).to_i + 5
+      })
+  end
+  
 end
