@@ -55,8 +55,10 @@ function Quiz(callback) {
     console.log('Correct answer: ' + currentTrack.name)
     
     var result ='<div class="quiz">'
-      result += '<h2>Guess the song in the genre: ' + genre.name + '</h2>'
-      result += '<audio controls="controls"><source src="' + currentTrack.previewUrl + '" type="audio/mpeg" /></audio>'
+      result += '<div class="player">'
+        result += '<h2>Guess the song in the genre: ' + genre.name + '</h2>'
+        result += '<audio controls="controls"><source src="' + currentTrack.previewUrl + '" type="audio/mpeg" /></audio>'
+      result += '</div>'
       result += '<div class="candidates">'
         for (var i=0; i<candidates.length; i++) {
           result += '<input type=radio name="quiz" value="' + candidates[i].name + '" /> ' + candidates[i].name + '<br />'
@@ -71,7 +73,8 @@ function Quiz(callback) {
   
   this.answer = function() {
     var correctness = $('input:radio:checked').val() == currentTrack.name
-    console.log('answer: ' + correctness)
+    $.getJSON('http://10.235.239.16:3000/home/submitresult?callback=?&result=' + correctness ? 1 : 0, function(data) {
+      console.log(data.toSource())
+    })
   }
-  //10.235.239.16/home/submitresult result
 }
