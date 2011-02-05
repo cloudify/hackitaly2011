@@ -1,2163 +1,708 @@
 
 
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:11:22 +0100 2011
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 17:57:30 +0100 2011
   Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.4ms)
-Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:13:01 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:13:01 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:14:13 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:14:13 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:14:19 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"hi"}
-Redirected to http://hackitaly.local/
-Completed 302 Found in 1174ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:14:21 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:14:21 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:15:56 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:15:56 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:16:02 +0100 2011
-  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
 Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:16:02 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:16:03 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:16:03 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:16:03 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:16:41 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:16:41 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:18:27 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:18:27 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:18:43 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:18:43 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:19:00 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"hi"}
-Redirected to http://hackitaly.local/
-Completed 302 Found in 1203ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:19:02 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:19:02 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:20:13 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/login" for 127.0.0.1 at Sat Feb 05 15:20:13 +0100 2011
-  Processing by HomeController#login as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 367ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:20:15 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.6ms)
-Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:20:15 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:20:20 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:20:20 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:20:20 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:20:23 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:20:23 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:20:23 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:20:23 +0100 2011
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/" for 127.0.0.1 at Sat Feb 05 15:20:26 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:20:29 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"hi"}
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:20:46 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/" for 127.0.0.1 at Sat Feb 05 15:20:46 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
-Redirected to http://hackitaly.local/
-Completed 302 Found in 17431ms
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:20:48 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:20:50 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"a"}
-Redirected to http://hackitaly.local/
-Completed 302 Found in 1273ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:20:51 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:20:51 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:22:13 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/" for 127.0.0.1 at Sat Feb 05 15:22:14 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:22:14 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-  Processing by HomeController#index as */*
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 21ms (Views: 21.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/b.html" for 127.0.0.1 at Sat Feb 05 15:22:16 +0100 2011
-
-ActionController::RoutingError (No route matches "/home/b.html"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:23:06 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/" for 127.0.0.1 at Sat Feb 05 15:23:06 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:23:06 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-  Processing by HomeController#index as */*
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-Rendered home/index.html.erb within layouts/application (2.3ms)
-Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/home/play/" for 127.0.0.1 at Sat Feb 05 15:23:08 +0100 2011
-
-AbstractController::ActionNotFound (The action 'home' could not be found for HomeController):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.9ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:23:15 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/" for 127.0.0.1 at Sat Feb 05 15:23:15 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:23:15 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-  Processing by HomeController#index as */*
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
-Rendered home/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:23:31 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:23:31 +0100 2011
-
-
-Started GET "/home/" for 127.0.0.1 at Sat Feb 05 15:23:31 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/b.html" for 127.0.0.1 at Sat Feb 05 15:23:33 +0100 2011
-
-ActionController::RoutingError (No route matches "/home/b.html"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:26:29 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/" for 127.0.0.1 at Sat Feb 05 15:26:29 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:26:29 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-  Processing by HomeController#index as */*
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-Rendered home/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/play" for 127.0.0.1 at Sat Feb 05 15:26:31 +0100 2011
-  Processing by PlayController#index as */*
-Rendered play/index.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:26:59 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/" for 127.0.0.1 at Sat Feb 05 15:26:59 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:26:59 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-  Processing by HomeController#index as */*
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-Rendered home/index.html.erb within layouts/application (2.7ms)
-Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:27:00 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 1ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:27:00 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:27:01 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:27:05 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:27:05 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:27:11 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"a"}
-Redirected to http://hackitaly.local/
-Completed 302 Found in 4550ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:27:16 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:28:12 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:28:12 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:28:12 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:28:15 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:28:15 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:28:18 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"a"}
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8578ms (Views: 19.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:28:27 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:28:54 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:28:54 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:28:56 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:28:56 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:28:56 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:28:59 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:28:59 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:29:02 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"a"}
-Redirected to http://hackitaly.local/play
-Completed 302 Found in 124ms
-
-
-Started GET "/play" for 127.0.0.1 at Sat Feb 05 15:29:02 +0100 2011
-  Processing by PlayController#index as */*
-Rendered play/index.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:29:58 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:29:58 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:30:06 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:30:06 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:30:06 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:30:09 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:30:10 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:30:13 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"hjkfdas"}
-Redirected to http://hackitaly.local/play
-Completed 302 Found in 1327ms
-
-
-Started GET "/play" for 127.0.0.1 at Sat Feb 05 15:30:15 +0100 2011
-  Processing by PlayController#index as */*
-Rendered play/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:30:24 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:30:24 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:31:15 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:31:15 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:31:15 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:31:18 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:31:18 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:31:22 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"fsgas"}
-Redirected to http://hackitaly.local/playme
-Completed 302 Found in 556ms
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 15:31:23 +0100 2011
-
-AbstractController::ActionNotFound (The action 'playme' could not be found for HomeController):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:35:43 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:35:43 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:35:45 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:35:45 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:35:45 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:35:48 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:35:48 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:35:50 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"dsfgsd"}
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:36:01 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:36:02 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-Completed   in 16216ms
-
-ActionController::RoutingError (No route matches {:format=>:json, :controller=>"home", :action=>"playme"}):
-  app/controllers/home_controller.rb:41:in `login'
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:36:49 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:36:49 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:36:54 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"adsfsda"}
-Redirected to http://hackitaly.local/playme
-Completed 302 Found in 518ms
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 15:36:55 +0100 2011
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:57:31 +0100 2011
   Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6603ms (Views: 20.5ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:37:18 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:57:37 +0100 2011
+  Processing by PlaymeController#index as */*
 
 
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:37:47 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:37:47 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:37:47 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:37:49 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:37:49 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:37:49 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:37:49 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:37:53 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:37:53 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:37:53 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:37:56 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"hjhkj"}
-Redirected to http://hackitaly.local/
-Completed 302 Found in 1723ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:37:57 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:38:09 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:39:12 +0100 2011
-  Processing by TopusersController#index as HTML
-Rendered topusers/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:39:13 +0100 2011
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 15:39:13 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.8ms)
-Completed 200 OK in 48ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:57:39 +0100 2011
   Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 2409ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 282ms (Views: 10.2ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 15:39:43 +0100 2011
-  Processing by PlaymeController#index as HTML
-Rendered playme/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 15:39:43 +0100 2011
-  Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 15:40:33 +0100 2011
-  Processing by PlaymeController#index as HTML
-Rendered playme/index.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:40:33 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:40:33 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:41:01 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:41:12 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:41:12 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:41:12 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:41:13 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
+Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 17:57:41 +0100 2011
+  Processing by HomeController#logout as HTML
+Redirected to http://hackitaly.local/?web=0
 Completed 302 Found in 0ms
 
 
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:41:13 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:41:14 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/icons-18-white.png" for 127.0.0.1 at Sat Feb 05 15:41:14 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/icons-18-white.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:41:17 +0100 2011
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 17:57:42 +0100 2011
   Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:41:17 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:41:17 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:57:42 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 1051ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7603ms (Views: 22.3ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 15:41:20 +0100 2011
+Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 17:57:48 +0100 2011
   Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"sadfas"}
-Redirected to http://hackitaly.local/
-Completed 302 Found in 1265ms
+  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"dfa"}
+Redirected to http://hackitaly.local/?web=0
+Completed 302 Found in 205ms
 
 
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:41:21 +0100 2011
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 17:57:48 +0100 2011
   Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:41:27 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:42:35 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:42:35 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:42:35 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:42:36 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 15:42:45 +0100 2011
-  Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:43:13 +0100 2011
-  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
 Rendered home/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:43:14 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:57:48 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 221ms (Views: 130.8ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:43:14 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 15:43:20 +0100 2011
-  Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:44:17 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:44:18 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:44:18 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:44:24 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:44:24 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:44:24 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:44:25 +0100 2011
+Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 17:57:49 +0100 2011
   Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+Rendered topusers/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 15:44:28 +0100 2011
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:57:50 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 84ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:57:51 +0100 2011
   Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6842ms (Views: 17.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:44:58 +0100 2011
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:57:58 +0100 2011
+  Processing by PlaymeController#index as */*
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:57:59 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 85ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playmeindex.html" for 127.0.0.1 at Sat Feb 05 17:58:02 +0100 2011
+
+ActionController::RoutingError (No route matches "/playmeindex.html"):
+  
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7457ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:58:09 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7741ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 17:58:25 +0100 2011
   Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:44:59 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 15:44:59 +0100 2011
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:58:25 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8399ms (Views: 17.8ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:44:59 +0100 2011
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:58:34 +0100 2011
+  Processing by PlaymeController#index as */*
 
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
 
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 17:58:34 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 4507ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12144ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 17:58:46 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8918ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:00:24 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:00:24 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 6153ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:00:30 +0100 2011
+  Processing by PlaymeController#index as */*
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:00:30 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 240ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:00:32 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:00:32 +0100 2011
   Processing by PlaymeController#index as */*
 Rendered playme/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 2644ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5551ms (Views: 19.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:45:03 +0100 2011
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:00:37 +0100 2011
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:00:37 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+  Processing by PlaymeController#index as */*
+Completed 200 OK in 3185ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6624ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:00:44 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8334ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:02:15 +0100 2011
   Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
 Rendered home/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 120ms (Views: 119.5ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:45:03 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:45:03 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:45:20 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:45:21 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:45:21 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 15:45:23 +0100 2011
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:02:15 +0100 2011
   Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 11543ms (Views: 19.3ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:45:28 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:46:03 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:46:03 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:46:03 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:46:03 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:46:17 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:46:17 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:46:17 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-  Processing by TopusersController#index as */*
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-Rendered topusers/index.html.erb within layouts/application (5.6ms)
-Completed 200 OK in 39ms (Views: 38.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:46:17 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:48:10 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 15:48:10 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:48:10 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-  Processing by PlaymeController#index as */*
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:48:10 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
-Rendered playme/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 56ms (Views: 56.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:48:12 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 19ms (Views: 19.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 15:48:12 +0100 2011
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:02:27 +0100 2011
   Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 1633ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 9976ms (Views: 9.3ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:49:29 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+Started GET "/playmeindex.html" for 127.0.0.1 at Sat Feb 05 18:03:22 +0100 2011
 
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:49:29 +0100 2011
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:49:29 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (3.3ms)
-Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:49:29 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 15:49:29 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 1302ms (Views: 9.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:52:36 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:52:36 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:52:36 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:52:36 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 15:52:37 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 709ms (Views: 8.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:55:37 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:55:37 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:55:37 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:55:37 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:56:09 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:58:42 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 15:58:42 +0100 2011
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:58:42 +0100 2011
-  Processing by TopusersController#index as */*
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-Rendered topusers/index.html.erb within layouts/application (3.4ms)
-Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:58:42 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/logout" for 127.0.0.1 at Sat Feb 05 15:58:57 +0100 2011
-
-ActionController::RoutingError (No route matches "/logout"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 15:59:04 +0100 2011
-  Processing by HomeController#logout as HTML
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:59:04 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.7ms)
-Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:59:04 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:59:04 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 15:59:45 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:59:45 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 15:59:46 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 16:00:10 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:01:20 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 16:01:20 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:01:23 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 16:01:23 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
+ActionController::RoutingError (No route matches "/playmeindex.html"):
   
 
 Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
 
 
-Started GET "/stylesheets/images/ajax-loader.png" for 127.0.0.1 at Sat Feb 05 16:01:23 +0100 2011
-
-ActionController::RoutingError (No route matches "/stylesheets/images/ajax-loader.png"):
-  
-
-Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 16:01:25 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"asda"}
-Redirected to http://hackitaly.local/
-Completed 302 Found in 1067ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:01:27 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.8ms)
-Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:01:36 +0100 2011
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:15:52 +0100 2011
   Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/login" for 127.0.0.1 at Sat Feb 05 16:01:36 +0100 2011
-  Processing by HomeController#login as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 137ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:01:36 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:02:10 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/login" for 127.0.0.1 at Sat Feb 05 16:02:10 +0100 2011
-  Processing by HomeController#login as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 114ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:02:10 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:02:14 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:04:51 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 16:04:53 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:04:53 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.3ms)
-Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:04:56 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 16:05:00 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"dsfg"}
-Redirected to http://hackitaly.local/
-Completed 302 Found in 567ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:05:00 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:05:05 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:05:54 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:05:54 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:06:02 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:06:03 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 16:06:11 +0100 2011
-  Processing by HomeController#logout as HTML
-Redirected to http://hackitaly.local/
-Completed 302 Found in 0ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:06:11 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 16:06:14 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"asdfgas"}
-Redirected to http://hackitaly.local/
-Completed 302 Found in 547ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:06:14 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:06:19 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:06:39 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:06:39 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:08:32 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:08:32 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:08:54 +0100 2011
-  Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:10:01 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 661ms (Views: 9.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:11:13 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:11:13 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:11:23 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:11:23 +0100 2011
-  Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (3.9ms)
-Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:11:26 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:11:48 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:11:48 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:11:53 +0100 2011
-  Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:12:16 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.5ms)
-Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:12:17 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:12:49 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:12:49 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:12:49 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 677ms (Views: 9.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:13:03 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:13:04 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 172ms (Views: 9.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/logout" for 127.0.0.1 at Sat Feb 05 16:13:05 +0100 2011
-  Processing by HomeController#logout as */*
-Redirected to http://hackitaly.local/
-Completed 302 Found in 1ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:13:05 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.3ms)
-Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:13:06 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 149ms (Views: 9.2ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/home/login" for 127.0.0.1 at Sat Feb 05 16:13:08 +0100 2011
-  Processing by HomeController#login as */*
-  Parameters: {"authenticity_token"=>"+WSvJoWhmoyHr3VQ/MqFgtsVhqkn+sBGdWE6UHbNit0=", "login"=>"x"}
-Redirected to http://hackitaly.local/
-Completed 302 Found in 118ms
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:13:09 +0100 2011
-  Processing by HomeController#index as */*
-Rendered home/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:13:09 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 186ms (Views: 9.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:13:10 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:13:11 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 171ms (Views: 9.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:13:31 +0100 2011
-  Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:13:32 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 138ms (Views: 9.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:13:33 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 311ms (Views: 9.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:13:49 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:13:50 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:13:50 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 355ms (Views: 9.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:13:53 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 160ms (Views: 9.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:14:00 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.3ms)
-Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:14:00 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 352ms (Views: 9.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:14:01 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:14:02 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 179ms (Views: 8.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:14:11 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:14:11 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.8ms)
-Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:14:11 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 228ms (Views: 9.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:14:13 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 203ms (Views: 8.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:14:18 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.3ms)
-Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:14:18 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 173ms (Views: 8.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:14:19 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:14:20 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 161ms (Views: 9.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:14:22 +0100 2011
-  Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:14:22 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 141ms (Views: 9.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:14:23 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 163ms (Views: 9.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:15:08 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:15:08 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:15:15 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.6ms)
-Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:15:17 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:15:41 +0100 2011
-  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
 Rendered home/index.html.erb within layouts/application (2.1ms)
 Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:15:41 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.3ms)
-Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:15:41 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 609ms (Views: 8.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:15:44 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 127ms (Views: 9.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:15:48 +0100 2011
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (2.0ms)
-Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:15:48 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 262ms (Views: 8.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:15:50 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (2.1ms)
-Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:15:50 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 260ms (Views: 9.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:15:51 +0100 2011
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:15:53 +0100 2011
   Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6457ms (Views: 20.8ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:15:51 +0100 2011
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:15:59 +0100 2011
   Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 226ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 615ms (Views: 9.6ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:15:53 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 424ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:16:06 +0100 2011
+  Processing by PlaymeController#submitresult as JSON
+Completed   in 53ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
 
 
-Started GET "/" for 127.0.0.1 at Sat Feb 05 16:16:54 +0100 2011
+Started GET "/?web=1" for 127.0.0.1 at Sat Feb 05 18:16:46 +0100 2011
   Processing by HomeController#index as HTML
+  Parameters: {"web"=>"1"}
+Rendered home/web.html.erb (0.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/tracks?genreCode=26341&step=10" for 127.0.0.1 at Sat Feb 05 18:16:46 +0100 2011
+  Processing by HomeController#tracks as JSON
+  Parameters: {"step"=>"10", "genreCode"=>"26341"}
+Completed 200 OK in 1064ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/getplayer" for 127.0.0.1 at Sat Feb 05 18:16:49 +0100 2011
+  Processing by HomeController#getplayer as JSON
+Rendered text template (0.0ms)
+Completed 200 OK in 108ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:17:48 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:17:48 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5986ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:17:55 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 2468ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:17:59 +0100 2011
+  Processing by PlaymeController#submitresult as JSON
+Completed   in 710ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:19:32 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:19:32 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9217ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:19:42 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 388ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:19:53 +0100 2011
+  Processing by PlaymeController#submitresult as JSON
+Completed   in 53ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:21:00 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:21:00 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10379ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:21:11 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 188ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:21:13 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 56ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:21:46 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:21:46 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7599ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:21:54 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 4267ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:22:00 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 56ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.8ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:25:14 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:25:15 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2202ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:25:17 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 178ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:25:20 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 425ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:50:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (137.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (142.7ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:25:27 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
 Rendered home/index.html.erb within layouts/application (2.1ms)
 Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:16:54 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 315ms (Views: 9.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/topusers" for 127.0.0.1 at Sat Feb 05 16:16:55 +0100 2011
-  Processing by TopusersController#index as */*
-Rendered topusers/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:16:55 +0100 2011
-  Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 130ms (Views: 9.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/playme" for 127.0.0.1 at Sat Feb 05 16:16:58 +0100 2011
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:25:27 +0100 2011
   Processing by PlaymeController#index as */*
-Rendered playme/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7844ms (Views: 18.2ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:16:58 +0100 2011
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:25:35 +0100 2011
   Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 194ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 106ms (Views: 7.8ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 16:16:59 +0100 2011
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:25:46 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 53ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:50:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:29:14 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:29:14 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14652ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:29:29 +0100 2011
   Processing by HomeController#gettopscores as JSON
-Completed 200 OK in 151ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 2750ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:29:33 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 53ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.9ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:31:24 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:31:24 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6473ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:31:31 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 145ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:31:33 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 0ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:32:20 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:32:20 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 18595ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:32:39 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:32:45 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 0ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+Completed 200 OK in 13221ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:33:22 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:33:22 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23241ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:33:46 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:33:51 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 0ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+Completed 200 OK in 24295ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:35:21 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:35:21 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 0ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.9ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:35:31 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:35:31 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 1ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (126.5ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (133.1ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:35:56 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:35:56 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 1ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:36:01 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:36:01 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 1ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:36:58 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+Completed   in 1ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:39:26 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:39:36 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:39:53 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 18:40:11 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:40:11 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Rendered text template (0.0ms)
+Completed 200 OK in 35585ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 27165ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:40:32 +0100 2011
+  Processing by PlaymeController#index as HTML
+Completed 200 OK in 20982ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29407ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:41:01 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Rendered text template (0.0ms)
+Completed 200 OK in 96491ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:41:21 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed 200 OK in 25718ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:42:08 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:42:34 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 78469ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 42925ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 36532ms (Views: 1.1ms | ActiveRecord: 0.0ms)

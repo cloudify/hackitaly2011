@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		    <link rel="stylesheet" href="/stylesheets/game.css" type="text/css" />
+	    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+
+    <script type="text/javascript" src="/javascripts/game.js"></script>
+	<style>
+		#score {
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			right: 0px;
+			top: 20px;
+		}
+		#score span {
+			font-size: 400px;
+		}
+		
+		#topusers {
+			position: absolute;
+			width: 300px;
+			height: 500px;
+			left: 0px;
+			top: 20px;
+		}
+		#topusers li.user {
+			
+		}
+		
+	</style>
+	</head>
+	<body>
+		<% if @current_user.nil? %>
+	<form method="POST" action="/home/login">
+			<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  			<input type="hidden" name="web" value="1">
+			Email Address <input type="text" name="login">
+  			<input type="submit" value="login">
+  		</form>
+		<% else %>
+		<h1>Welcome <%= session[:guid] %>! Guess the song!</h1>
+		<a href="/home/logout?web=1">Sign out</a>
+		<div id="score"></div>
+		<ul id="topusers"></ul>
+	<script>
+      	
+		$(document).ready(function() {
+			quiz = new Quiz(function() {
+				$("body").append(quiz.generate())
+			});
+			
+			$.getJSON('/home/getplayer', function(data) {
+				var score = Math.floor(data['playerScore']['default']['balance']);
+				$('#score').html('Your score<br/><span>' + score + '</span>');
+			})
+			
+			$.getJSON('/home/gettopscores', function(data) {
+				for(var i = 0; i < data.length; i++) {
+					$('#topusers').append('<li class="' + (data[i]['entry']['guid'] == '<%= session[:guid] %>' ? 'user' : '') + '">(' + data[i]['score'] +  ' points) ' + data[i]['entry']['guid']);
+				}
+			})
+			
+		})
+      
+    </script>
+
+		<% end %>
+	</body>
+
+</html>
+	
