@@ -5,6 +5,7 @@ App::Application.routes.draw do
   get "topusers/index"
 
   match 'playme/tracks' => 'playme#tracks', :defaults => {:format => :json}
+  match 'playme/submitresult' => 'playme#submitresult', :defaults => {:format => :json}
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

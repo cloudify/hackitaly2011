@@ -26,10 +26,30 @@ class PlaymeController < ApplicationController
     samples = arr_tracks['response']['tracks'].sample(@@tracks_num)
     selected = samples.sample
 
+    session[:right] = selected['trackCode']
+
     resp = []
     resp.push(samples.map {|s| s['name']})
     resp.push(selected)
 
     render :json => resp.to_json
+  end
+
+  def submitresult
+    req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/submitscore",
+      :method        => :get,
+      :headers       => {
+        :apikey => @beintoo_apikey,
+        :guid => session[:guid]
+      },
+      :params => {
+        :lastScore => params[:result] == session[:right] ? 1 : -1
+      })
+    req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/byguid/" + session[:guid].to_s,
+      :method        => :get,
+      :headers       => {
+        :apikey => @@beintoo_apikey
+      })
+      render :text => req.body
   end
 end
