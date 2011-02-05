@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		    <link rel="stylesheet" href="/stylesheets/game.css" type="text/css" />
+	    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+
+    <script type="text/javascript" src="/javascripts/game.js"></script>
+	<style>
+		body {
+			background: #fff url('/images/musquiz.png') no-repeat;
+		}
+	
+		#score {
+			color: #999;
+			text-align: center;
+			position: absolute;
+			right: 10px;
+			top: 20px;
+			padding: 30px;
+		}
+		#score span {
+			font-size: 300px;
+			letter-spacing: -40px;
+		}
+				
+		#topusers {
+			position: absolute;
+			left: 5px;
+			top: 100px;
+			padding: 10px;
+			background-color: rgba(0, 0, 255, 0.1);
+			-webkit-border-radius: 20px;
+			color: #000;
+			text-shadow: #fff;
+		}
+		
+		#topusers h2 {
+			font-size: 30px;
+			text-align: center;
+		}
+		
+		#topusers ol {
+			font-size: 30px;
+		}
+		
+		#topusers ol li {
+			margin-bottom: 10px;
+		}
+		
+		#topusers ol li.user {
+			background-color: #ff0;
+		}
+		
+		#signout {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			font-size: 20px;
+		}
+		
+		div.quiz {
+			color: #fff;
+			background-color: rgba(0, 0, 0, 0.6);
+			padding: 20px;
+			-webkit-border-radius: 20px;
+			font-weight: bold;
+			text-shadow: 0px 1px 2px #000;
+		}
+		
+		#loader {
+			width: 128px;
+			height: 15px;
+			background-image: url(/images/loader.gif);
+			margin: 200px auto;
+		}
+		
+	</style>
+	</head>
+	<body id="page">
+		<% if @current_user.nil? %>
+	<form method="POST" action="/home/login">
+			<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  			<input type="hidden" name="web" value="1">
+			Email Address <input type="text" name="login">
+  			<input type="submit" value="login">
+  		</form>
+		<% else %>
+		<h1>Welcome <%= session[:guid] %>! Guess the song!</h1>
+		<a id="signout" href="/home/logout?web=1">Sign out</a>
+		<div id="score"></div>
+		<div id="topusers"><h2>Top users</h2><ol></ol></div>
+		<div id="loader"></div>
+	<script>
+      	
+		$(document).ready(function() {
+			quiz = new Quiz(function() {
+				$('#loader').hide();
+				$("body").append(quiz.generate())
+			});
+			
+			$.getJSON('/home/getplayer', function(data) {
+				var score = Math.floor(data['playerScore']['default']['balance']);
+				$('#score').html('Your score<br/><span>' + score + '</span>');
+			})
+			
+			$.getJSON('/home/gettopscores', function(data) {
+				for(var i = 0; i < data.length; i++) {
+					$('#topusers ol').append('<li class="' + (data[i]['entry']['guid'] == '<%= session[:guid] %>' ? 'user' : '') + '">(' + data[i]['score'] +  ' points) ' + data[i]['entry']['guid']);
+				}
+			})
+			
+		})
+      
+    </script>
+
+		<% end %>
+	</body>
+
+</html>
+	
