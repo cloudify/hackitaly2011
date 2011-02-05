@@ -52,7 +52,7 @@ function Quiz(callback) {
     }
     
     currentTrack = candidates[Math.floor(Math.random()*candidates.length)]
-    console.log('Correct answer: ' + currentTrack.name)
+    // console.log('Correct answer: ' + currentTrack.name)
     
     var result ='<div class="quiz">'
       result += '<div class="player">'
@@ -61,9 +61,8 @@ function Quiz(callback) {
       result += '</div>'
       result += '<div class="candidates">'
         for (var i=0; i<candidates.length; i++) {
-          result += '<input type=radio name="quiz" value="' + candidates[i].name + '" /> ' + candidates[i].name + '<br />'
+          result += '<input type=radio onclick="quiz.answer()" name="quiz" value="' + candidates[i].name + '" /> ' + candidates[i].name + '<br />'
         }
-        result += '<div class="buttonContainer"><button onclick="quiz.answer()">Answer</button></div>'
       result += '</div>'
     result += '</div>'
     
@@ -75,9 +74,9 @@ function Quiz(callback) {
     var correctness = $('input:radio:checked').val() == currentTrack.name
 	$('body').css('background-color', correctness ? '#0f0' : '#f00');
     var url = '/home/submitresult?result=' + (correctness ? 1 : 0)
-	console.log(url)
+	// console.log(url)
 	$.getJSON(url, function(data) {
-      console.log(data.toSource())
+		document.location.reload()
     })
   }
 }
