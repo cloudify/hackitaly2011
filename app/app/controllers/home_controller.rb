@@ -8,7 +8,9 @@ class HomeController < ApplicationController
   def index
     @current_user = session[:user]
     
-    render :template => 'home/web', :layout => false if params[:web]
+    if params[:web] == 1
+      render :template => 'home/web', :layout => false 
+    end
   end
   
   def gettopscores
