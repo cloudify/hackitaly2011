@@ -8,7 +8,7 @@ class HomeController < ApplicationController
   def index
     @current_user = session[:user]
     
-    if params[:web] == 1
+    if params[:web] == '1'
       render :template => 'home/web', :layout => false 
     end
   end
