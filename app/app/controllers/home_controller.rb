@@ -62,7 +62,7 @@ class HomeController < ApplicationController
   end
   
   def playme
-    req = Typhoeus::Request.get("http://api.playme.com/genre.getTrack",
+    req = Typhoeus::Request.get("http://api.playme.com/genre.getTracks",
       :method        => :get,
       :params => {
         :apikey => @@playme_apikey,
@@ -70,6 +70,7 @@ class HomeController < ApplicationController
         :format => "json",
         :genreCode => params[:genreCode]
       })
-    render :json => ActiveSupport::JSON.decode(req.body)
+    puts req.body
+    render :json => req.body
   end
 end
