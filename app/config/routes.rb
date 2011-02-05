@@ -1,10 +1,10 @@
 App::Application.routes.draw do
   get "playme/tracks"
-
-  match 'playme/' => 'home#playme', :defaults => {:format => :json}
+  get "playme/index"
   get "topusers/index"
 
   match 'playme/tracks' => 'playme#tracks', :defaults => {:format => :json}
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
