@@ -3,8 +3,8 @@ App::Application.routes.draw do
   get "topusers/index"
 
   match 'playme/index' => 'playme#index', :defaults => {:format => :json}
-  match 'playme/submitresult' => 'playme#submitresult', :defaults => {:format => :json}
-  # The priority is based upon order of creation:
+
+  get 'playme/submitresult'
   # first created -> highest priority.
 
   # Sample of regular route:

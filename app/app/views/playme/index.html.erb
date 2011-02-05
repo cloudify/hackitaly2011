@@ -11,8 +11,8 @@
       <% @data.each do |song| %>
         <li>
             <img src="<%= song[:image] %>">
-            <h3><a href="index.html"><%= song[:name] %></a></h3>
-            <p><%= song[:artist] %></p></h3>
+            <h3><a href="/playme/submitresult?<%= song[:id]%>"><%= song[:name] %></a></h3>
+            <p><%= song[:artist] %></p>
         </li>
       <% end %>
     </ul>

@@ -211,3 +211,498 @@ ActionController::RoutingError (No route matches "/playmeindex.html"):
   
 
 Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:15:52 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:15:53 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6457ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:15:59 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 615ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:16:06 +0100 2011
+  Processing by PlaymeController#submitresult as JSON
+Completed   in 53ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started GET "/?web=1" for 127.0.0.1 at Sat Feb 05 18:16:46 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"1"}
+Rendered home/web.html.erb (0.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/tracks?genreCode=26341&step=10" for 127.0.0.1 at Sat Feb 05 18:16:46 +0100 2011
+  Processing by HomeController#tracks as JSON
+  Parameters: {"step"=>"10", "genreCode"=>"26341"}
+Completed 200 OK in 1064ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/getplayer" for 127.0.0.1 at Sat Feb 05 18:16:49 +0100 2011
+  Processing by HomeController#getplayer as JSON
+Rendered text template (0.0ms)
+Completed 200 OK in 108ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:17:48 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:17:48 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5986ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:17:55 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 2468ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:17:59 +0100 2011
+  Processing by PlaymeController#submitresult as JSON
+Completed   in 710ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:19:32 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:19:32 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9217ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:19:42 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 388ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:19:53 +0100 2011
+  Processing by PlaymeController#submitresult as JSON
+Completed   in 53ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:21:00 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:21:00 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10379ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:21:11 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 188ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:21:13 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 56ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:21:46 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:21:46 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7599ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:21:54 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 4267ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:22:00 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 56ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.8ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:25:14 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:25:15 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2202ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:25:17 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 178ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:25:20 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 425ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:50:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (137.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (142.7ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:25:27 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:25:27 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7844ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:25:35 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 106ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:25:46 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 53ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:50:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:29:14 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:29:14 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14652ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:29:29 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 2750ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:29:33 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 53ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:49:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.9ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:31:24 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:31:24 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6473ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:31:31 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Completed 200 OK in 145ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:31:33 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 0ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:32:20 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:32:20 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 18595ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:32:39 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:32:45 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 0ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+Completed 200 OK in 13221ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:33:22 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:33:22 +0100 2011
+  Processing by PlaymeController#index as */*
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23241ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:33:46 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:33:51 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 0ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+Completed 200 OK in 24295ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:35:21 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:35:21 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 0ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.9ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:35:31 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:35:31 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 1ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (126.5ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (133.1ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:35:56 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:35:56 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 1ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/?web=0" for 127.0.0.1 at Sat Feb 05 18:36:01 +0100 2011
+  Processing by HomeController#index as HTML
+  Parameters: {"web"=>"0"}
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:36:01 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed   in 1ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:36:58 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+Completed   in 1ms
+
+NameError (uninitialized class variable @@beintoo_apikey in PlaymeController):
+  app/controllers/playme_controller.rb:40:in `submitresult'
+
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:39:26 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:39:36 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:39:53 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 18:40:11 +0100 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:40:11 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Rendered text template (0.0ms)
+Completed 200 OK in 35585ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 27165ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme" for 127.0.0.1 at Sat Feb 05 18:40:32 +0100 2011
+  Processing by PlaymeController#index as HTML
+Completed 200 OK in 20982ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+Rendered playme/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29407ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/gettopscores" for 127.0.0.1 at Sat Feb 05 18:41:01 +0100 2011
+  Processing by HomeController#gettopscores as JSON
+Rendered text template (0.0ms)
+Completed 200 OK in 96491ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:41:21 +0100 2011
+  Processing by PlaymeController#submitresult as */*
+Completed 200 OK in 25718ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:42:08 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+
+
+Started GET "/playme/submitresult" for 127.0.0.1 at Sat Feb 05 18:42:34 +0100 2011
+  Processing by PlaymeController#submitresult as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 78469ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 42925ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 36532ms (Views: 1.1ms | ActiveRecord: 0.0ms)
