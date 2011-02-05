@@ -73,6 +73,7 @@ function Quiz(callback) {
   
   this.answer = function() {
     var correctness = $('input:radio:checked').val() == currentTrack.name
+	$('body').css('background-color', correctness ? '#0f0' : '#f00');
     var url = '/home/submitresult?result=' + (correctness ? 1 : 0)
 	console.log(url)
 	$.getJSON(url, function(data) {
