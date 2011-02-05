@@ -19,7 +19,7 @@
 	<h2>Top Users</h2>
 	<ul>
 	<% @top_users.each do |player| %>
-		
+		<pre><%= player['entry']['guid'] %></pre>
 	<% end %>
 	</ul>
 </html>

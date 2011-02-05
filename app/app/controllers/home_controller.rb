@@ -9,9 +9,11 @@ class HomeController < ApplicationController
     chart_req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/app/topscore",
       :method        => :get,
       :headers       => {
-        :apikey => @@apikey
+        :apikey => '1234567890'
       })
+    
     @top_users = ActiveSupport::JSON.decode(chart_req.body)
+    puts @top_users.to_yaml
   end
 
   def login
