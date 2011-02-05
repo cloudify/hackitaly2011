@@ -27,12 +27,13 @@ class PlaymeController < ApplicationController
 
     session[:right] = selected['trackCode']
     @mp3 = selected['previewUrl']
-    @data = samples.map {|s| {:name => s['name'], :artist => s['artist']['name'], :image => s['images']['img_96']} }
+    @data = samples.map {|s| {:name => s['name'], :id => s['trackCode'], :artist => s['artist']['name'], :image => s['images']['img_96']} }
   end
 
 
   def submitresult
     @guess = params[:result].to_i == session[:right]
+Rails.logger.debug("// PRE")
     req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/submitscore",
       :method        => :get,
       :headers       => {
@@ -42,11 +43,12 @@ class PlaymeController < ApplicationController
       :params => {
         :lastScore => @guess ? 1 : -1
       })
+Rails.logger.debug("// MID")
     req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/byguid/" + session[:guid].to_s,
       :method        => :get,
       :headers       => {
         :apikey => $beintoo_apikey
       })
-      render :text => req.body
+Rails.logger.debug("// POST")
   end
 end
