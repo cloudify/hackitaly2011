@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script src="jquery-1.5.min.js"></script>
+		<script src="xss.js"></script>
+	</head>
+	<body>
+		<h1>Registration</h1>
+		<form>
+			email: <input type="text" name="login" id="registration-email">
+			<button id="registration-login" type="button">Login</button>
+		</form>
+	</body>
+	<script type="application/javascript">
+	
+	$(document).ready(function() {
+		var beintoo_api = '8efa78d626e15a7c5c72fa442f5793';
+		
+		$('#registration-login').click(function() {
+			var user_email = $('#registration-email').val();
+			$.ajax({
+				url: 'http://api.beintoo.com/api/rest/player/login',
+				method: 'GET',
+				beforeSend: function(hxr, settings) {
+					hxr.setRequestHeader('apikey', '8efa78d626e15a7c5c72fa442f5793');
+					hxr.setRequestHeader('guid', user_email);
+					hxr.setRequestHeader('Accept', 'application/json');
+				},
+				success: function(data, status, xhr) {
+					console.log(data);
+					console.log(status);
+					console.log(xhr);
+				}
+			});
+		})
+	})
+	</script>
+</html>
