@@ -17,7 +17,7 @@ class PlaymeController < ApplicationController
                                 :method => :get,
                                 :params => {
       :apikey => @@playme_apikey,
-      :step => 10,
+      :step => 100,
       :format => "json",
       :genreCode => GENRES.sample['genreCode']
     })

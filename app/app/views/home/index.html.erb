@@ -2,12 +2,12 @@
 <% if @current_user.nil? %>
   <div data-role="page" id="login">
    	<div data-role="header">
-   		<h1>Login</h1>
+   		<h1>Welcome to ...</h1>
    	</div>
    	<div data-role="content">
   		<form method="POST" action="/home/login">
 			<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  			email: <input type="text" name="login">
+  			Email Address <input type="text" name="login">
   			<input type="submit" value="login">
   		</form>
    	</div>
@@ -16,13 +16,25 @@
    	</div>
   </div>
    
-  <% else %>
-  <div data-role="page" id="play">
-   	<div data-role="header">
-   	  <h1>Play!</h1>
-   	</div>
-
- 	<a href="/home/logout">Sign out</a>
- 	<% end %>
+<% else %>
+  <div data-role="page" id="play">	
+   	<div data-role="navbar">
+      <ul>
+        <li><a href="/playme" class="ui-btn-active">Play</a></li>
+        <li><a href="/topusers">Leaderboard</a></li>
+      </ul>
+    </div>
+    <div data-role="content">
+  	  <h1><%= session[:guid] %> - Play!</h1>
+		<div id="game-content"></div>
+  	  <a href="/home/logout">Sign out</a>    	
+  	</div>
+  </div>  	
+<script>  
+      var quiz = new Quiz(function() {
+        $("body").append(quiz.generate())
+      })
+    </script>
+<% end %>
 
 

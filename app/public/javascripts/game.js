@@ -38,7 +38,7 @@ function Quiz(callback) {
   
   var sortCandidates = function(a, b) { return a.name > b.name }
   
-  $.getJSON('proxy.php?op=3&apikey=4c3131495653414882&format=json&genreCode=' + genre.genreCode + '&step=' + TRACKS_NUM, function(data) {
+  $.getJSON('/home/tracks?genreCode=' + genre.genreCode + '&step=' + TRACKS_NUM, function(data) {
     tracks = data.response.tracks
     callback()
   })
@@ -73,7 +73,9 @@ function Quiz(callback) {
   
   this.answer = function() {
     var correctness = $('input:radio:checked').val() == currentTrack.name
-    $.getJSON('http://10.235.239.16:3000/home/submitresult?callback=?&result=' + correctness ? 1 : 0, function(data) {
+    var url = '/home/submitresult?result=' + (correctness ? 1 : 0)
+	console.log(url)
+	$.getJSON(url, function(data) {
       console.log(data.toSource())
     })
   }
