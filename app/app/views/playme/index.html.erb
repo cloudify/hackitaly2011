@@ -1,24 +1,27 @@
 <div data-role="page" id="play">	
- 	<div data-role="navbar">
+  <div data-role="navbar">
     <ul>
       <li><a href="/playme" class="ui-btn-active">Play</a></li>
       <li><a href="/topusers">Leaderboard</a></li>
     </ul>
   </div>
   <div data-role="content">
-	  <h2>Guess the Track</h2>
-	  <ul data-role="listview"> 
-      <li class="ui-li-has-thumb ui-btn ui-btn-icon-right ui-li ui-btn-down-c ui-btn-up-c" role="option" tabindex="0" data-theme="c">
+    <h2>Guess the Track</h2>
+    <ul data-role="listview">
+      <% @data.each do |song| %>
+        <li class="ui-li-has-thumb ui-btn ui-btn-icon-right ui-li ui-btn-down-c ui-btn-up-c" role="option" tabindex="0" data-theme="c">
         <div class="ui-btn-inner">
           <div class="ui-btn-text">
-      			<img src="IMAGE" class="ui-li-thumb">
-      			<h3 class="ui-li-heading"><a href="index.html" class="ui-link-inherit">TrackName</a></h3>
-      		</div>
-      	</div>
-      </li>
-		</ul>
-	  
-	  
-	  <h3><a href="/home/logout">Sign out</a></h3>   	
-	</div>
+            <img src="<%= song['image'] %>" class="ui-li-thumb">
+            <h3 class="ui-li-heading"><a href="index.html" class="ui-link-inherit"><%= song['name'] %></a></h3>
+            <h3 class="ui-li-heading"><a href="index.html" class="ui-link-inherit"><%= song['artist'] %></a></h3>
+          </div>
+        </div>
+        </li>
+      <% end %>
+    </ul>
+
+
+    <h3><a href="/home/logout">Sign out</a></h3>   	
+  </div>
 </div>

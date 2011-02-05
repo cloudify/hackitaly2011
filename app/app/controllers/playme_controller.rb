@@ -12,7 +12,7 @@ class PlaymeController < ApplicationController
     {"genreCode"=>"26407", "name"=>"Punk" }
   ]
 
-  def tracks
+  def index
     tracks = Typhoeus::Request.get("http://api.playme.com/genre.getTracks",
                                 :method => :get,
                                 :params => {
@@ -22,17 +22,15 @@ class PlaymeController < ApplicationController
       :genreCode => GENRES.sample['genreCode']
     })
 
-    arr_tracks = ActiveSupport::JSON.decode(tracks.body) #['tracks'].sample(@@tracks_num)
+    arr_tracks = ActiveSupport::JSON.decode(tracks.body)
     samples = arr_tracks['response']['tracks'].sample(@@tracks_num)
     selected = samples.sample
 
     session[:right] = selected['trackCode']
 
-    resp = []
-    resp.push(samples.map {|s| s['name']})
-    resp.push(selected)
+    @data = samples.map {|s| {:name => s['name'], :artist => s['artist']['name'], :image => s['images']['img_96']} }
 
-    render :json => resp.to_json
+    #render :json => resp.to_json
   end
 
   def submitresult
