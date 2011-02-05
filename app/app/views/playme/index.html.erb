@@ -1,12 +1,23 @@
 <div data-role="page" id="play">	
- 	<div data-role="navbar">
+  <div data-role="navbar">
     <ul>
       <li><a href="/playme" class="ui-btn-active">Play</a></li>
       <li><a href="/topusers">Leaderboard</a></li>
     </ul>
   </div>
   <div data-role="content">
-	  play<br/>
-	  <a href="/home/logout">Sign out</a>    	
-	</div>
+    <h2>Guess the Track</h2>
+    <ul data-role="listview">
+      <% @data.each do |song| %>
+        <li>
+            <img src="<%= song[:image] %>">
+            <h3><a href="index.html"><%= song[:name] %></a></h3>
+            <p><%= song[:artist] %></p></h3>
+        </li>
+      <% end %>
+    </ul>
+
+
+    <h3><a href="/home/logout">Sign out</a></h3>   	
+  </div>
 </div>

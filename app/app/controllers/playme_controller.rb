@@ -12,7 +12,7 @@ class PlaymeController < ApplicationController
     {"genreCode"=>"26407", "name"=>"Punk" }
   ]
 
-  def tracks
+  def index
     tracks = Typhoeus::Request.get("http://api.playme.com/genre.getTracks",
                                 :method => :get,
                                 :params => {
@@ -22,14 +22,32 @@ class PlaymeController < ApplicationController
       :genreCode => GENRES.sample['genreCode']
     })
 
-    arr_tracks = ActiveSupport::JSON.decode(tracks.body) #['tracks'].sample(@@tracks_num)
+    arr_tracks = ActiveSupport::JSON.decode(tracks.body)
     samples = arr_tracks['response']['tracks'].sample(@@tracks_num)
     selected = samples.sample
 
-    resp = []
-    resp.push(samples.map {|s| s['name']})
-    resp.push(selected)
+    session[:right] = selected['trackCode']
 
-    render :json => resp.to_json
+    @data = samples.map {|s| {:name => s['name'], :artist => s['artist']['name'], :image => s['images']['img_96']} }
+
+    #render :json => resp.to_json
+  end
+
+  def submitresult
+    req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/submitscore",
+      :method        => :get,
+      :headers       => {
+        :apikey => @beintoo_apikey,
+        :guid => session[:guid]
+      },
+      :params => {
+        :lastScore => params[:result] == session[:right] ? 1 : -1
+      })
+    req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/player/byguid/" + session[:guid].to_s,
+      :method        => :get,
+      :headers       => {
+        :apikey => @@beintoo_apikey
+      })
+      render :text => req.body
   end
 end
