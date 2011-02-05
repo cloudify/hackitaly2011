@@ -66,4 +66,17 @@ class HomeController < ApplicationController
   
   def topusers
   end
+
+  def tracks
+    req = Typhoeus::Request.get("http://api.playme.com/genre.getTracks",
+      :method        => :get,
+      :params => {
+        :apikey => @@playme_apikey,
+        :step => params[:step],
+        :format => "json",
+        :genreCode => params[:genreCode]
+      })
+    puts req.body
+    render :json => req.body
+  end
 end
