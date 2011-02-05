@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   respond_to :html, :mobile
   
   @@beintoo_apikey = "8efa78d626e15a7c5c72fa442f5793"
+  @@playme_apikey = "4c3131495653414882"
   
   def index
     @current_user = session[:user] 
@@ -46,4 +47,15 @@ class HomeController < ApplicationController
       })
   end
   
+  def playme
+    req = Typhoeus::Request.get("http://api.playme.com/genre.getTrack",
+      :method        => :get,
+      :params => {
+        :apikey => @@playme_apikey,
+        :step => params[:step],
+        :format => "json",
+        :genreCode => params[:genreCode]
+      })
+    render :json => ActiveSupport::JSON.decode(breq.body)
+  end
 end
