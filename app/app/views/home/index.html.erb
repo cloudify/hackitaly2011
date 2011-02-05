@@ -17,24 +17,18 @@
   </div>
    
 <% else %>
-  <div data-role="page" id="play">	
-   	<div data-role="navbar">
-      <ul>
-        <li><a href="/playme" class="ui-btn-active">Play</a></li>
-        <li><a href="/topusers">Leaderboard</a></li>
-      </ul>
-    </div>
-    <div data-role="content">
-  	  <h1><%= session[:guid] %> - Play!</h1>
-		<div id="game-content"></div>
-  	  <a href="/home/logout">Sign out</a>    	
-  	</div>
-  </div>  	
-<script>  
-      var quiz = new Quiz(function() {
-        $("body").append(quiz.generate())
-      })
-    </script>
+<div data-role="page" id="play">	
+ 	<div data-role="navbar">
+    <ul>
+      <li><a href="/playme" class="ui-btn-active">Play</a></li>
+      <li><a href="/topusers">Leaderboard</a></li>
+    </ul>
+  </div>
+  <div data-role="content">
+	  play<br/>
+	  <a href="/home/logout">Sign out</a>    	
+	</div>
+</div>
 <% end %>
 
 
