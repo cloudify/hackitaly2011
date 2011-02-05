@@ -1,3 +1,10 @@
+<div data-role="page" id="submitresult">
   <div data-role="content">
-<h2><%= @guess %> hi</h2>
+    <% if @guess %>
+    <h2>You Win</h2>
+    <% else %>
+    <h2>You Suck</h2>
+    <% end %>
+    <a href="/playme">Try Again</a>
+  </div>
 </div>

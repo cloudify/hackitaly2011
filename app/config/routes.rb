@@ -4,7 +4,9 @@ App::Application.routes.draw do
 
   match 'playme/index' => 'playme#index', :defaults => {:format => :json}
 
-  get 'playme/submitresult'
+  
+  match 'playme/submitresult' => 'playme#submitresult'
+  
   # first created -> highest priority.
 
   # Sample of regular route:
