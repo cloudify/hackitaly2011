@@ -6,6 +6,9 @@ class HomeController < ApplicationController
   
   def index
     @current_user = session[:user] 
+  end
+  
+  def gettopscores
     chart_req = Typhoeus::Request.get("http://api.beintoo.com/api/rest/app/topscore",
       :method        => :get,
       :headers       => {
@@ -15,6 +18,8 @@ class HomeController < ApplicationController
     @top_users = ActiveSupport::JSON.decode(chart_req.body).collect{ |p| p['score'] = p['entry'].andand['playerScore'].andand['default'].andand['balance'].to_i; p }.sort do |a,b|
       b['score'] <=> a['score']
     end
+    
+    render :json => @top_users
   end
 
   def login
@@ -50,6 +55,9 @@ class HomeController < ApplicationController
         :apikey => @@beintoo_apikey
       })
       render :text => req.body
+  end
+  
+  def topusers
   end
   
 end

@@ -13,12 +13,6 @@
 	<% else %>
 	<h1>Play!</h1>
 	<a href="/home/logout">Sign out</a>
-	<% end %>
-	
-	<h2>Top Users</h2>
-	<ul>
-	<% @top_users.each do |player| %>
-		<li>(<%= player['score'] %>) <%= player['entry'].andand['guid'] %></li>
-	<% end %>
-	</ul>
+	<% end %>	
+	</body>
 </html>
